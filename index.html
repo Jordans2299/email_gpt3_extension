@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <!-- <script src="https://kit.fontawesome.com/1c37cb57ef.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+       <div id="back_btn"><i class="fas fa-arrow-left"></i></div> 
+        
+        <div><img src="assets/logo_v2.png" id="logo-big" alt=""></div>
+        <div id="key_needed">
+            <p>To get started, add your OpenAI API Key!</p>
+            <input id="key_input" />
+            <button class="key_btn" id="save_key_button">Add key</button>
+        </div>
+        <div id="status"></div>
+        <div id="key_entered">
+           <p>You are connected to OpenAI</p>
+           <button class="key_btn" id="change_key_button">Change key</button>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

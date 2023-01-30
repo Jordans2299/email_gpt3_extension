@@ -1,0 +1,33 @@
+#key_entered,#key_needed{
+    text-align: center;
+}
+body{
+    min-width: 300px;
+    background-color: rgba(241, 246, 246, 0.493);
+}
+#logo-big{
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+.key_btn{
+    padding: .8rem 1.6rem;
+    background-color: rgba(1, 185, 185, 0.807);
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: .5rem;
+
+}
+.fa-arrow-left{
+    color: rgb(28, 28, 28);
+    font-size: 25px;
+    margin: .5rem;
+}
+#back_btn{
+    display: none;
+}
+#back-btn:hover{
+    cursor: pointer;
+}

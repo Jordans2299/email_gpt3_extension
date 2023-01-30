@@ -1,0 +1,33 @@
+{
+    "name": "Email Assistant",
+    "description": "I'll help you generate emails",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "48": "assets/logo_v3_48.png",
+        "72": "assets/logo_v3_72.png",
+        "96": "assets/logo_v3_96.png",
+        "144": "assets/logo_v3_144.png"
+      },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Email Writer"
+    },
+    "background": {
+        "service_worker": "scripts/contextMenuService.js"
+    },
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["scripts/frontend.js"]
+        }
+    ]
+}
